@@ -67,10 +67,21 @@ class DAG:
 
         for u in topo:
             for v in graph[u]:
-                res[v] = max(res[v],res[u]+weights[(u,v)])
+                res[v] = max(res[v],res[u]+1)
 
         return res
 
+    # counting paths
+    def counting_path(graph,src):
+        topo = DAG.topo_dfs(graph)
+        res = {node : 0 for node in graph}
+        res[src] = 1
+
+        for u in topo:
+            for v in graph[u]:
+                res[v] += res[u]
+
+        return res
 
 
 # calling shortest_path function
