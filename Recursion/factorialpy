@@ -1,0 +1,10 @@
+def factorial(n):
+    # this will handle the n=0 and the base conditon 
+    if n == 0 or n ==1:
+        return 1
+    
+    return n*factorial(n-1)
+
+# calling the function]
+print(factorial(5))
+print(factorial(7))
