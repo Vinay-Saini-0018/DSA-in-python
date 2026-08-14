@@ -14,4 +14,4 @@ def count_sort(arr):
 arr = [2,3,4,3,2,3,4,5,15]
 result , count_arr = count_sort(arr)
 print(f'sorted array : {result}')
-print(f"count arr : {count_arr}")
+print(f"count_arr : {count_arr}")

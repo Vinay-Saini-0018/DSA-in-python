@@ -30,4 +30,4 @@ def ExponentialSearch(arr,target):
     return binary_search(arr,target,low,high)
 
 arr = [1,2,3,4,5,6,7,12,14,15,18,24,29,35,46,76,78]
-print(ExponentialSearch(arr,24))
+print(f"At index : {ExponentialSearch(arr,24)}")
